@@ -5,21 +5,24 @@ lazyParam is a simple automation tool with the implementation of multi-threading
 
 * Fuzz parameters for both GET and POST method
 * Multi-threaded _(Default: 4)_
-* Use intensive mode with characters bypassing techniques (beta)
-* Check for LFI, RCE and SSTI 
+* Use intensive mode with character bypassing techniques
+* Check for LFI, RCE and SSTI
 
 # Todo
 
 * XSS checking
+* Add examples to prove effectiveness
 
 # Usage
 
-Fuzz parameters with build in wordlists
-```
+Fuzz parameters with build-in wordlists:
+
+```shell
 python3 lazyparam.py -u http://example.com/file.php
 ```
 
-Specify custom wordlist
-```
+Specify custom wordlists:
+
+```shell
 python3 lazyparam.py -u http://example.com/file.php -w wordlists.lst
 ```
